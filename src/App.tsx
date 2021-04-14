@@ -1,22 +1,20 @@
 import React from "react";
 import Button from "./components/Button";
+import Icon from "./components/Icon";
+import Transition from "./components/Transition";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import "./styles/index.scss";
+import { fas } from "@fortawesome/free-solid-svg-icons";
+library.add(fas);
+
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <Button btnType='primary'>Hello</Button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Button btnType="primary">Hello</Button>
+      <Icon icon="arrow-down" theme="dark" size="lg" />
+      <Transition animation="zoom-in-bottom" in timeout={3000}>
+        <div>this is a disabledProps</div>
+      </Transition>
     </div>
   );
 }
