@@ -2013,7 +2013,7 @@
     core-js "^3.8.2"
     ts-dedent "^2.0.0"
 
-"@storybook/addon-docs@6.2.8":
+"@storybook/addon-docs@6.2.8", "@storybook/addon-docs@^6.2.8":
   version "6.2.8"
   resolved "http://bnpm.byted.org/@storybook/addon-docs/-/@storybook/addon-docs-6.2.8.tgz#b5d039ad04805eceb99dbbb60a45c6d49096f0c3"
   integrity sha1-tdA5rQSAXs65nbu2CkXG1JCW8MM=

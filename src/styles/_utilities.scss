@@ -1,0 +1,123 @@
+// utilities for display
+// ------------------------
+.d-none {
+    display: none !important;
+}
+
+.d-inline {
+    display: inline !important;
+}
+
+.d-inline-block {
+    display: inline-block !important;
+}
+
+.d-block {
+    display: block !important;
+}
+
+.d-table {
+    display: table !important;
+}
+
+.d-table-cell {
+    display: table-cell !important;
+}
+
+.d-table-row {
+    display: table-row !important;
+}
+
+.d-flex {
+    display: flex !important;
+}
+
+.d-inline-flex {
+    display: inline-flex !important;
+}
+
+// utilities for abs
+// ------------------------
+.abs {
+    &-top-left,
+    &-left-top {
+        @include abs(0, auto, auto, 0);
+    }
+
+    &-top-right,
+    &-right-top {
+        @include abs(0, 0, auto, auto);
+    }
+
+    &-bottom-left,
+    &-left-bottom {
+        @include abs(auto, auto, 0, 0);
+    }
+
+    &-bottom-right,
+    &-right-bottom {
+        @include abs(auto, 0, 0, auto);
+    }
+
+    &-top {
+        @include abs(0, 0, auto, 0);
+    }
+
+    &-bottom {
+        @include abs(auto, 0, 0, 0);
+    }
+
+    &-left {
+        @include abs(0, auto, 0, 0);
+    }
+
+    &-right {
+        @include abs(0, 0, 0, auto);
+    }
+
+    &-center {
+        @include abs-center();
+    }
+
+    &-center-y {
+        @include abs-center-y();
+    }
+
+    &-center-x {
+        @include abs-center-x();
+    }
+
+    &-fill {
+        @include abs(0, 0, 0, 0);
+    }
+}
+
+// utilities for abs
+// ------------------------
+.radius-m {
+    border-radius: $border-radius
+}
+
+// utilities for visibility
+// ------------------------
+.visible {
+    visibility: visible !important;
+}
+
+.invisible {
+    visibility: hidden !important;
+}
+
+// utilities for overflow
+// ------------------------
+.overflow-auto {
+    overflow: auto !important;
+}
+
+.overflow-hidden {
+    overflow: hidden !important;
+}
+
+.overflow-visible {
+    overflow: visible !important;
+}

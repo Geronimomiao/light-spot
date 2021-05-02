@@ -13,7 +13,7 @@ type TransitionProps = CSSTransitionProps & {
   wrapper?: boolean;
 };
 
-const Transition: FC<TransitionProps> = (props) => {
+export const Transition: FC<TransitionProps> = (props) => {
   const { children, classNames, animation, wrapper, ...restProps } = props;
   return (
     <CSSTransition
