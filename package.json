@@ -1,6 +1,6 @@
 {
   "name": "light-spot",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "React components library",
   "author": "miao.tjpu",
   "private": false,
@@ -26,6 +26,11 @@
     "@fortawesome/react-fontawesome": "^0.1.14",
     "classnames": "^2.3.1",
     "react-transition-group": "^4.4.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run test:nowatch && npm run lint"
+    }
   },
   "scripts": {
     "clean": "rimraf ./dist",
