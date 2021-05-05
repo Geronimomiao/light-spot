@@ -14,6 +14,6 @@ import { Button, Icon } from "light-spot";
 
 ## Todo
 
-[ ]组件库文档
-[ ]CI/CD 集成
+[✔️] 组件库文档(https://geronimomiao.github.io/light-spot/?path=/docs/button--default-button)
+[✔️] CI/CD 集成
 
