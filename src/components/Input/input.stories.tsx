@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import React, { ChangeEvent, useState } from "react";
 import { Meta } from "@storybook/react";
-import { action } from "@storybook/addon-actions";
 
 import { Input } from "./input";
 
@@ -15,7 +14,7 @@ export const ControlledInput = () => {
     <Input
       value={value}
       defaultValue={value}
-      onChange={(e) => {
+      onChange={(e: ChangeEvent<HTMLInputElement>) => {
         setValue(e.target.value);
       }}
     />
@@ -27,7 +26,6 @@ export const defaultInput = () => (
     <Input
       style={{ width: "300px" }}
       placeholder="placeholder"
-      onChange={action("changed")}
     />
     <ControlledInput />
   </>
