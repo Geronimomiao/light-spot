@@ -1,8 +1,8 @@
 {
   "name": "light-spot",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "React components library",
-  "author": "Miao TJPU",
+  "author": "miao.tjpu",
   "private": false,
   "main": "dist/index.js",
   "module": "dist/index.js",
@@ -98,5 +98,5 @@
   "peerDependencies": {
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0"
-  },
+  }
 }
