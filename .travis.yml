@@ -4,6 +4,8 @@ node_js:
 cache:
   directory:
     - node_modules
+install:
+  - yarn
 env:
   - CI=true
 script:
